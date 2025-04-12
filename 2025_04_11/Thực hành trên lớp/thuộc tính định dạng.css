@@ -1,0 +1,41 @@
+h1{
+    font-weight: 900;
+    width: 100%;
+    background-image: 
+    url('https://i.pinimg.com/736x/0a/20/fc/0a20fcc7bfacc5a20151f9e791e6b0f8.jpg');
+}
+
+
+
+h3{background-color: rgb(246, 215, 177); color: brown; font-size:16px;}
+
+
+h2{background-color: pink;  
+    opacity: 0,9;
+    text-align: center;
+}
+
+
+p{
+    text-indent: 300px;
+    text-decoration-line:underline ;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: double;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+h4{
+    font-size: 40px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px ;
+}
+
+.border{
+    border: 3px outset blue;
+    border-radius: 10px 0px 10px ;
+}
