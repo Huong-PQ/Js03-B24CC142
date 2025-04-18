@@ -1,0 +1,66 @@
+.trangchu{
+    padding: 30px 30px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(46, 117, 231);
+    text-align: center;
+}
+
+.thanhchon{ background-color: rgb(24, 24, 88);text-align: center; color: white;
+
+    p{
+        display: inline-block;
+        margin-left: 100px;
+        
+        font-size: 20px;
+        
+    }
+}
+   
+
+/* .nd{margin: 30px;
+
+    #div1{
+        font-size: 20px;
+        width: 80%;
+        height: 100%; 
+        float: left;}
+
+
+    #div2{
+        font-size:18px;
+        width: 20%;
+        background-color: aliceblue; 
+        float: right;
+        
+    }
+        
+   
+} */
+.nd {
+    margin: 30px;
+    display: flex;
+}
+
+#div1 {
+    font-size: 20px;
+    width: 80%;
+}
+
+#div2 {
+    font-size: 18px;
+    width: 20%;
+    background-color: aliceblue;
+}
+
+
+
+
+.banquyen{
+    padding: 20px 20px;
+    text-align: center;
+    clear: both ;
+    font-size: 18px;
+    background-color: rgb(24, 24, 43);
+    color: white;
+}
