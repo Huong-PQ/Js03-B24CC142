@@ -1,0 +1,49 @@
+
+  .container{
+    background-color: rgb(255, 243, 227);
+    width: 700px;
+    height: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly
+   
+    
+   
+  }
+
+  .box {
+    height: 200px;
+    width: 200px;
+  }
+
+  .box1{
+    background-color: rgb(170, 236, 149);
+    height: 300px;
+  }
+
+  .box2{
+    align-self: flex-end;
+    background-color: rgb(185, 185, 245);
+  }
+
+  .box3{
+    background-color: rgb(234, 140, 169);
+    height: 150px;
+  }
+
+  .box4{
+    background-color: rgb(234, 140, 169);
+    height: 160px;
+  }
+  
+  .box5{
+    background-color: rgb(140, 204, 234);
+    height: 170px;
+  }
+  
+  .box6{
+    align-self: flex-end;
+    background-color: rgb(228, 234, 140);
+    height: 180px;
+  }
+  
