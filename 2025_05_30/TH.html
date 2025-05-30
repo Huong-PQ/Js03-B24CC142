@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Slide </title>
+  <style>
+    .slide {
+      position: relative;
+      width: 600px;
+      height: 300px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+
+    .img1 {
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    .img1.active {
+      display: block;
+    }
+
+    .slide button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.4s linear;
+    }
+
+    button:hover{
+        background-color: rgba(161, 161, 161, 0);
+    }
+    .trc {
+      left: 10px;
+    }
+
+    .sau {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slide">
+  <img src="https://i.pinimg.com/736x/66/aa/27/66aa27647cf2e2855f27ec976106a726.jpg" class="img1 active">
+  <img src="https://i.pinimg.com/736x/49/93/a1/4993a16ddc8a3bf97c34e825ca2fe00e.jpg" class="img1">
+  <img src="https://i.pinimg.com/736x/61/fc/bd/61fcbd5bdfb2b4448712bf625941b0d8.jpg" class="img1">
+
+  <button class="trc">&#10094;</button>
+  <button class="sau">&#10095;</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.img1');
+  let vtri = 0; // vtri là vị trí ảnh hiện tại
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+    slides[index].classList.add('active');
+  }
+
+  document.querySelector('.trc').addEventListener('click', () => {
+    vtri = (vtri - 1 + slides.length) % slides.length;
+    showSlide(vtri);
+  });
+
+  document.querySelector('.sau').addEventListener('click', () => {
+    vtri = (vtri + 1) % slides.length;
+    showSlide(vtri);
+  });
+</script>
+
+</body>
+</html>
