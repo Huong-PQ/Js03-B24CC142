@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Page</title>
+</head>
+<body>
+
+  <h2>Admin Page</h2>
+  <div id="welcome"></div>
+
+  <script>
+    // Kiểm tra nếu đã đăng nhập
+    var isLoggedIn = localStorage.getItem("isLoggedIn");
+    var username = localStorage.getItem("username");
+
+    if (isLoggedIn === "true" && username) {
+      document.getElementById("welcome").innerText = "Chào mừng, " + username + "!";
+    } else {
+      // Nếu chưa đăng nhập thì không cho vào
+      document.body.innerHTML = "<h3>Bạn chưa đăng nhập!</h3>";
+    }
+  </script>
+
+</body>
+</html>
